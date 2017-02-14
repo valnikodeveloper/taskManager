@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <center><td><h1 style="color:white;background-color:black">Task  Manager</h1></center>
+     <center><td><h2 id="aTask">Welcome</h2></td></center>
+
+    <a href="./register.html">Sign up</a>
+    <p style="color:darkgreen">Enter your credentials here:</p>
+</head>
+
+    <style type="text/css">
+        tab1 {
+            display: inline-block;
+            float: left;
+            clear: left;
+            width: 70px;
+            }
+        #tbl td {padding: 0px; }
+    </style>
+
+
+ <script src="./task_manager.js"  type="text/javascript">
+	 AddModule("./task_manager.js");
+ </script>
+
+<body>
+
+<form method=post action="./serverScript.py" target=_blank>
+    <tab1>Login:</tab1><input></input>
+    </br></br>
+    <tab1>Password:</tab1><input type="password"></input>
+    </br></br>
+    <input type="submit" onclick="login()" value="Sign in"></input>
+</form>
+</body>
+</html>

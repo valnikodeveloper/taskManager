@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+ <script type="text/javascript" src="http://localhost:8080/jquery/jquery-1.11.1.min.js">
+ </script>
+    <meta charset="UTF-8">
+    <title>Tasks</title>
+     <center><td><h1 style="color:white;background-color:black">Task  Manager</h1></center>
+     <center><td><h2 id="aTask">Subtasks</h2></td></center>
+    <style type="text/css">
+        body {
+             background-color: lightblue;
+        }
+        tab1 { padding-left: 10.4em; }
+        #tbl td {padding: 0px; }
+    </style>
+</head>
+
+
+<p id="debug"> </p>
+
+
+
+ <script src="./task_manager.js"  type="text/javascript">
+	 AddModule("./task_manager.js");
+ </script>
+
+
+<body onload="getFromServer('aSubTask')">
+
+
+
+<d id="debug"></d>
+
+<rtree>
+    <table id="tbl">
+    </table>
+
+    <div>Type task here:<tab1>Task time (hours):</tab1><br>
+            <input id="textinput" type="text" size="40"></input>
+            <input id="textinput2" type="text" maxlength="5" size="5"></input>
+            <br>
+                <button id="myBtn" onclick="writeTasks('aSubTask')">submit</button>
+            </br>
+    </div>
+
+</rtree>
+
+    <script>
+
+
+
+</script>
+</body>
+</html>

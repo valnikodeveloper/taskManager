@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+     <center><td><h1 style="color:white;background-color:black">Task  Manager</h1></center>
+     <center><td><h2 id="aTask">Fill registration form</h2></td></center>
+</head>
+
+
+ <script type="text/javascript" src="http://localhost:8080/jquery/jquery-1.11.1.min.js">
+ </script>
+
+<script src="./task_manager.js"  type="text/javascript">
+	 AddModule("./task_manager.js");
+ </script>
+<body>
+
+
+</head>
+
+    <style type="text/css">
+        tab1 {
+            display: inline-block;
+            float: left;
+            clear: left;
+            width: 70px;
+            }
+        #tbl td {padding: 0px; }
+    </style>
+<a href="./login.html">Sign in</a>
+<form method=post action="./serverScript.py" target=_blank>
+    <tab1>Username:</tab1><input id="usr"></input>
+    </br></br>
+    <tab1>Password:</tab1><input type="password" id="psw"></input>
+    </br></br>
+    <input type="submit" onclick="register()" value="Sign up"></input>
+</form>
+
+
+</body>
+</html>
